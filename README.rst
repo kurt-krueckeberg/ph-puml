@@ -4,15 +4,17 @@ How to Run
 Basic Mode
 ----------
 
-$ ph-puml mycode/src > class.puml
-$ ph-puml mycode/src class.puml
+.. code-block:: bash
 
+    $ ph-puml mycode/src > class.puml
+    $ ph-puml mycode/src class.puml
+    
 This outputs class.puml in the current directory, so you may want to specify a path.
 
 Running with the Advanced Features
 ----------------------------------
 
-ph-puml generates PlantUML puml file syntax by default, but you can also export most output formats supported by PlantUML directly.
+**ph-puml** generates PlantUML puml file syntax by default, but you can also export most output formats supported by PlantUML directly.
 
 Currently, these are:
 
@@ -30,5 +32,7 @@ Currently, these are:
 Example Usage
 +++++++++++++ 
 
-$ ~/n/ph-puml/bin/ph-puml /my/code/dir -p /usr/share/plantuml/plantuml.jar -f svg > ~/mycode.svg
+.. code-block:: bash
+
+    $ ~/n/ph-puml/bin/ph-puml /my/code/dir -p /usr/share/plantuml/plantuml.jar -f svg > ~/mycode.svg
 
